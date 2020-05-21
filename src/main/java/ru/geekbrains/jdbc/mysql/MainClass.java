@@ -97,7 +97,7 @@ public class MainClass {
         try {
             // Строка ?serverTimezone=Europe/Moscow нужна для устранения ошибки TimeZone
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysqltest?serverTimezone=Europe/Moscow",
-                    "root", "Vovchik72");
+                    "root", "root");
             stmt = connection.createStatement();
         } catch (SQLException e) {
             e.printStackTrace();
